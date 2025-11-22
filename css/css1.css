@@ -81,7 +81,6 @@ footer{
 }
 section{
     padding: 20px;
-
 	width: 65%;
 	margin: 20px 0px 20px 0px;
 	overflow: auto;
@@ -146,6 +145,7 @@ main{
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
+		
     }
 
      .paragraph{
@@ -303,9 +303,144 @@ main{
     }
 
 
-       /* GRID LAYOUT */
-    
+     /* PRODUCT GRID */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* wrap items sa next line */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* space between items */
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden; /* alisin ang horizontal scroll */
+}
 
+section {
+    flex: 1 1 300px; /* flexible width, minimum 300px */
+    max-width: 300px;
+    height: 495px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+     overflow-x: hidden; /* alisin horizontal scroll */
+     border: 1px solid rgba(0,0,0,0.50);
+}
+
+section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+	border: 1px solid rgba(0,0,0,0.50);
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.itemImage {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.paragraph h1 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    
+}
+
+.paragraph h4 {
+    font-size: 0.9rem;
+    margin: 8px 0 3px 0;
+}
+
+.paragraph p {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.paragraph a {
+    margin-top: 8px;
+    display: inline-block;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.paragraph{
+    margin: 0px 0px 0px 20px;
+}
+
+.paragraph a:hover {
+    text-decoration: underline;
+}
+
+.product-header{
+    margin: 5px 0px;
+    background-color: #00000091;
+    color: white;
+    
+}
+
+#container{
+    color: black;
+     text-decoration: none;
+}
+
+#container .paragraph{
+    text-align: center;
+}
+
+#container h1{
+    font-size: 2rem;
+}
+
+
+
+/* RESPONSIVE GRID */
+@media (max-width: 768px) {
+    section {
+        flex: 1 1 45%; /* 2 columns */
+        max-width: 45%;
+        text-decoration: none;
+        height: auto;
+    }
+    #container{
+    color: black;
+     text-decoration: none;
+}
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    section {
+        flex: 1 1 100%; /* 1 column */
+        max-width: 100%;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .itemImage {
+        max-width: 200px;
+    }
+   
+}
+
+.product-header{
+    text-align: center;
+    padding: 10px;
+}
 
 
   
