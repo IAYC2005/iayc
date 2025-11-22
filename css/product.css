@@ -340,13 +340,36 @@ main{
     .branch-row > div {
       padding: 5px 0;
     }
+	
 
     /* Add labels */
     .branch-name::before { content: "BRANCH: "; font-weight: bold; }
     .branch-number::before { content: "NUMBER: "; font-weight: bold; }
     .branch-location::before { content: "LOCATION: "; font-weight: bold; }
-    .branch-store::before { content: "COMPANY/STORE NAME: "; font-weight: bold; }
+    .branch-store::before { content: "FACE BOOK PAGE: "; font-weight: bold; }
   }
+  
+  #qrbtn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+  }
+  
+  .btn{
+	background-color: black;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+  transition: 0.2s;
+  }
+  
+  @media (max-width: 750px) {
+    
+	#qrbtn{
+		display: block;
+	}
 
 
   

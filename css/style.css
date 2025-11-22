@@ -39,6 +39,7 @@ header {
     text-decoration: none;
     transition: color 0.3s;
     margin: 10px 0px 15px 10px;
+
   }
 
 .nav-links a:hover {
@@ -119,6 +120,7 @@ main{
       top: 60px;
       left: 0;
       width: 100%;
+	  
       flex-direction: column;
       background-color: #000000;
       overflow: hidden;
@@ -133,7 +135,7 @@ main{
     }
 
     .nav-links.show {
-      max-height: 300px; /* adjust if more links */
+      max-height: 500px; /* adjust if more links */
       transition: max-height 0.4s ease, padding 0.3s ease;
     }
 
