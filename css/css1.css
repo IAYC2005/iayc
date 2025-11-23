@@ -85,7 +85,13 @@ section{
 	margin: 20px 0px 20px 0px;
 	overflow: auto;
 	box-sizing: border-box;
+	
+	background-image: url('');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
+
 
 
 .paragraph{
@@ -132,7 +138,7 @@ main{
     }
 
     .nav-links.show {
-      max-height: 300px; /* adjust if more links */
+      max-height: 500px; /* adjust if more links */
       transition: max-height 0.4s ease, padding 0.3s ease;
     }
 
@@ -145,7 +151,7 @@ main{
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-		
+		height: auto;
     }
 
      .paragraph{
@@ -156,6 +162,7 @@ main{
     section{
         padding: 30px;
         width: auto;
+		
     }
 
     .itemImage{
@@ -341,6 +348,7 @@ section:hover {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+	height: 100%;
 }
 
 .itemImage {
@@ -429,6 +437,7 @@ section:hover {
         max-width: 100%;
         padding: 10px;
         text-decoration: none;
+		
     }
 
     .itemImage {

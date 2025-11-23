@@ -44,3 +44,19 @@
         document.getElementById("loading-spinner").style.display = "flex";
       });
     });
+	
+	<!-- QR SCRIPTS -->
+
+function openQR(imagePath) {
+  document.getElementById('qrImage').src = imagePath;
+  document.getElementById('qrPopup').style.display = 'flex';
+}
+function closeQR() {
+  document.getElementById('qrPopup').style.display = 'none';
+}
+
+document.getElementById("qrPopup").addEventListener("click", function(e){
+  if(e.target === this){
+    closeQR();
+  }
+});

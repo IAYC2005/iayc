@@ -145,7 +145,7 @@ main{
     }
 
     .nav-links.show {
-      max-height: 300px; /* adjust if more links */
+      max-height: 500px; /* adjust if more links */
       transition: max-height 0.4s ease, padding 0.3s ease;
     }
 
