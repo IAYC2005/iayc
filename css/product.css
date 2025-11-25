@@ -346,7 +346,7 @@ main{
     .branch-name::before { content: "BRANCH: "; font-weight: bold; }
     .branch-number::before { content: "NUMBER: "; font-weight: bold; }
     .branch-location::before { content: "LOCATION: "; font-weight: bold; }
-    .branch-store::before { content: "FACE BOOK PAGE: "; font-weight: bold; }
+    .branch-store::before { content: "FACEBOOK PAGE: "; font-weight: bold; }
   }
   
   #qrbtn{

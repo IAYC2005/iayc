@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>INK ALL-YOU-CAN</title>
+  <link rel="icon" type="image/x-icon" href="banner/iconlogo.jpg">
   <link href="css/css1.css" rel="stylesheet">
   <style>
 	h1 a{
@@ -47,33 +48,10 @@
 
 
 <footer>
-    <p>&copy; 2025 ink all you. All rights reserved.</p>
+    <p>&copy; 2025 ink all-you-can. All rights reserved.</p>
 </footer>
 
-<script>
-  const navLinks = document.getElementById("navLinks");
-  const hamburger = document.getElementById("hamburger");
-
-  function toggleMenu() {
-    navLinks.classList.toggle("show");
-
-    // Palitan icon ng hamburger/close
-    if (navLinks.classList.contains("show")) {
-      hamburger.textContent = "✖";
-    } else {
-      hamburger.textContent = "☰";
-    }
-  }
-
-  // Close when clicking outside
-  document.addEventListener("click", function (event) {
-    const isClickInside = navLinks.contains(event.target) || hamburger.contains(event.target);
-    if (!isClickInside && navLinks.classList.contains("show")) {
-      navLinks.classList.remove("show");
-      hamburger.textContent = "☰"; // Ibalik ang hamburger icon
-    }
-  });
-</script>
+<script src="js/script.js"></script>
 
 
 

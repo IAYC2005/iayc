@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>INK ALL-YOU-CAN</title>
-  <link href="css/css1.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="banner/iconlogo.jpg">
+  <link href="css/style.css" rel="stylesheet">
   <style>
 	h1 a{
 		text-decoration: none;
@@ -29,51 +30,48 @@
 </header>
 <main>
 <section>
-    <div class="container">
-      <h1>	SERVICES</h1>
-      <div class="content">
-        
-        <div class="paragraph">
-                    
-                    
-                    <br>
+	<h1>SERVICES</h1><br>
+	
+    <p><b>1. Ink Refilling Services</b><br>
+	Enjoy high-quality and affordable printing through our professional ink refilling services. 
+	We use brand-specific, high-grade inks powered by Ink Precision Technology (IPT) to deliver vibrant colors, 
+	sharp text, and consistent printing results—while helping extend the lifespan of your printer.<br><br>
 
-      </div>
-        
-    </div>
+	<b>2. Brand-New Compatible Toner Cartridges (For Laser Printers)</b></br>
+	We offer brand-new, high-quality compatible toner cartridges designed for 
+	reliable performance and excellent print output. All units are tested for compatibility, 
+	durability, and efficiency—providing a cost-effective alternative to OEM toner without compromising quality.<br><br>
+
+	<b>3. Printer Repair & Maintenance</b><br>
+	Our skilled technicians provide quick and dependable repair and maintenance services for 
+	both inkjet and laser printers. From diagnostics and cleaning to mechanical adjustments 
+	and part replacements, we ensure your device operates smoothly and efficiently.<br><br>
+
+	<b>4. Continuous Ink Supply System (CISS) Installation</b><br>
+	Optimize your printing productivity with our professional CISS setup.
+	Ideal for high-volume printing, our installation ensures stable ink flow, 
+	reduced printing costs, and consistent output—perfect for businesses, schools, and homes.<br><br>
+
+	<b>5. Printer Parts Replacement</b><br>
+	We provide high-quality replacement parts such as printheads, rollers, belts, sensors, 
+	and maintenance kits. All parts are sourced from trusted suppliers to ensure reliability 
+	and long-term performance.<br><br>
+
+	<b>6. Diagnostic & Isolation Services</b><br>
+	Unsure what’s wrong with your printer? Our diagnostic service identifies issues 
+	using professional-grade tools. After assessment, we provide a clear explanation 
+	and recommend the most practical and affordable solution.<br><br>
+</p>
 </section>
 </main>
 
 
 
 <footer>
-    <p>&copy; 2025 ink all you. All rights reserved.</p>
+    <p>&copy; 2025 ink all-you-can. All rights reserved.</p>
 </footer>
 
-<script>
-  const navLinks = document.getElementById("navLinks");
-  const hamburger = document.getElementById("hamburger");
-
-  function toggleMenu() {
-    navLinks.classList.toggle("show");
-
-    // Palitan icon ng hamburger/close
-    if (navLinks.classList.contains("show")) {
-      hamburger.textContent = "✖";
-    } else {
-      hamburger.textContent = "☰";
-    }
-  }
-
-  // Close when clicking outside
-  document.addEventListener("click", function (event) {
-    const isClickInside = navLinks.contains(event.target) || hamburger.contains(event.target);
-    if (!isClickInside && navLinks.classList.contains("show")) {
-      navLinks.classList.remove("show");
-      hamburger.textContent = "☰"; // Ibalik ang hamburger icon
-    }
-  });
-</script>
+<script src="js/script.js"></script>
 
 
 
