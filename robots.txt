@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /banner/
+Disallow: /image/
+Allow: /
+
+Sitemap: https://www.inkallyoucan.com.ph/sitemap.xml
